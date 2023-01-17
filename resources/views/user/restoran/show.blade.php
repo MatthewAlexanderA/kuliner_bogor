@@ -110,7 +110,7 @@
 				</div>
 				<div class="col-lg-6" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400">
 					<div class="video-section-img">
-						<img alt="elements" src="{{ asset('storage/'. $product->image) }}">
+						<img alt="elements" src="{{ asset('storage/'. $product->image) }}" style="width: 100%; height: 500px; border-radius: 70px; object-fit: cover;">
 						{{-- width: 560px; height: 560px; --}}
 						{{-- <a data-fancybox="" href="https://www.youtube.com/watch?v=CKnGXZxK7zs"><i class="fa-solid fa-play"></i></a> --}}
 					</div>

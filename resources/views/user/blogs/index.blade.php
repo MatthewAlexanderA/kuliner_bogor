@@ -1,8 +1,5 @@
 @extends ('layout.user')
 @section ('content')
-<?php
-use App\Models\User;
-?>
 <!-- hero-section -->
 <section class="hero-section about gap" style="background-image: url(assets/img/background.png);">
 			<div class="container">
@@ -64,10 +61,7 @@ use App\Models\User;
 							<p>{!! substr($blog->desc, 0, 120) !!}...</p>
 							<a href="{{ route('blogs.show', $blog->slug) }}">Read More<i class="fa-solid fa-arrow-right"></i></a>
 							<ul class="data">
-                                @php
-                                    $creator = User::where('email', $blog->auth)->first();
-                                @endphp
-								<li><h6><i class="fa-solid fa-user"></i>by {!! $creator->username !!}</h6></li>
+								<li><h6><i class="fa-solid fa-user"></i>by {!! $blog->auth !!}</h6></li>
 								<li><h6><i class="fa-regular fa-calendar-days"></i>{!! $blog->date !!}</h6></li>
 								<li><h6><i class="fa-solid fa-eye"></i>{!! $blog->view !!}</h6></li>
 							</ul>

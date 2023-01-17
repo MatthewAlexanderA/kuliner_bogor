@@ -39,13 +39,6 @@ use App\Models\Rating;
           <div class="img-restaurant">
             <img alt="{!! $banner->judul !!}" src="{{ asset('storage/'. $banner->gambar) }}" title="{!! $banner->judul !!}">
             {{-- width: 680px; height: 720px: --}}
-            <div class="wilmington location-restaurant">
-              <i class="fa-solid fa-location-dot"></i>
-              <div>
-                <h6>12 Restaurant</h6>
-                <p>In Your city</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
